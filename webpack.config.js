@@ -6,10 +6,12 @@ module.exports = {
     entry: {
         app: './src/index.js'
     },
+    devtool: 'inline-source-map',
     plugins: [
         new CleanWebpackPlugin(['dist']),
         new HtmlWebpackPlugin({
-            title: 'Output Management'
+            title: 'Crypto charts',
+            template: 'src/main.html'
         })
     ],
     output: {
